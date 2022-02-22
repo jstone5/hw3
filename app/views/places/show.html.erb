@@ -1,0 +1,16 @@
+<h1><%= @place.name %></h1>
+
+<ul>
+    <% for post in @place.posts %>
+        <%= post.title %>
+        <br>
+        <%= post.posted_on %>
+        <br>
+        <%= post.description %>
+        <br>
+    <% end %>
+</ul>
+
+<a href="/posts/new?place_id=<%= @place.id %>">Add Post in <%= @place.name %></a>
+
+<a href="/places">View All Places</a>
