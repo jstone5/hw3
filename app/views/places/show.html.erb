@@ -2,9 +2,7 @@
 
 <% for post in @place.posts %>
     <h2><%= post.title %></h2>
-    <br>
-    <h6><%= post.posted_on %></h6>
-    <br>
+    <h4><%= post.posted_on %></h6>
     <p><%= post.description %></p>
     <br>
 <% end %>

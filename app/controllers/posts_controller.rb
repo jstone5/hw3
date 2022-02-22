@@ -6,8 +6,7 @@ class PostsController < ApplicationController
     end
     
     def create
-        values = params["post"]
-        @post = Post.new(values)
+        @post = Post.new(params["post"])
         @post.save
         redirect_to "/places"
     end
